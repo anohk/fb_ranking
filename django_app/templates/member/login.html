@@ -1,0 +1,9 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+<h1>Facebook Login</h1>
+<div class="fb-login-container">
+    <a href="//www.facebook.com/v2.8/dialog/oauth?client_id={{ facebook_app_id }}&redirect_uri=http://localhost:8000/member/login/facebook/">페이스북으로 로그인</a>
+</div>
+
+{% endblock %}
